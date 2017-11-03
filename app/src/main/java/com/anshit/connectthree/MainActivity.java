@@ -1,5 +1,6 @@
 package com.anshit.connectthree;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     int[] gameState = {2,2,2,2,2,2,2,2,2};
 
     int[][] winningPositions={{0,1,2},{3,4,5},{6,7,8},{0,3,6},{1,4,7},{2,5,8},{0,4,8},{2,4,6}};
+
+    public void about(View view){
+        Intent intent= new Intent(MainActivity.this,Main2Activity.class);
+        startActivity(intent);
+    }
 
     public void dropIn(View view){
         ImageView counter= (ImageView) view;

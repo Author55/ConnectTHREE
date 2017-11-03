@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.anshit.connectthree.MainActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha="0.8"
+        android:onClick="about"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="About"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/playAgainLayout"
         android:layout_width="wrap_content"
